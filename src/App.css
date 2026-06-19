@@ -1,0 +1,162 @@
+/* ================================================
+   Task 016 — Patient List Management
+   All component styles in one place
+   ================================================ */
+
+/* ── Global Reset ───────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* ── App Layout ─────────────────────────────── */
+.app-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── Header ─────────────────────────────────── */
+.app-header {
+  background-color: #1e40af;
+  color: #ffffff;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+
+.app-header p {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+/* ── Main Content Area ──────────────────────── */
+.app-main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* ── Footer ─────────────────────────────────── */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #64748b;
+  background-color: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* ── Shared Card ─────────────────────────────── */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+/* ── AddPatient Component ───────────────────── */
+.add-patient-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.add-patient-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  color: #1e293b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.add-patient-form input:focus {
+  border-color: #3b82f6;
+}
+
+.btn-add {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-add:hover {
+  background-color: #2563eb;
+}
+
+/* ── PatientList Component ──────────────────── */
+.empty-text {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.patient-list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.patient-name {
+  font-size: 15px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.btn-delete {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-delete:hover {
+  background-color: #fecaca;
+}
+
+.patient-count {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #64748b;
+}
